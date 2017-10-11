@@ -1,7 +1,7 @@
 ## Bam-Merge-Preprocessing
 a split from BFMC with Indel Realignment and Base Quality Recalibration (gatk3)
 
-![bmpp](docs/bamFilterMergeSort.png)
+![bmpp](workflow-bam-merge-preprocessing/docs/bamFilterMergeSort.png)
 
 ## Workflow Options
 
