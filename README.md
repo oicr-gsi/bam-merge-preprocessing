@@ -47,13 +47,13 @@ would result in 4 parallel jobs and all reads chr9+ being filtered out from the 
 
 Parameter | Value | Description
 ---|---|---
-picard_mark_duplicates | | path to Picard's Mark Duplicate.jar	Y	set to bundled picard's MarkDuplicates.jar
+picard_mark_duplicates | | path to Picard's Mark Duplicate.jar
 picard_mark_duplicates_mem_mb | 10000 | memory allocated to MarkDuplicate operation in Mb
 picard_merge_sam | | path to Picard's MergeSam.jar
 picard_sort_sam | | path to Picard's SortSam.jar
-picard_merge_sam_mem_mb	| 10000 | memory allocated to MergeSam operation
+picard_merge_sam_mem_mb | 10000 | memory allocated to MergeSam operation
 samtools_filter_other_params | | additional parameters for siltering with samtools
-picard_mark_duplicates_other_params	| | additional parameters for MarkDuplicates (Picard tools)
+picard_mark_duplicates_other_params | | additional parameters for MarkDuplicates (Picard tools)
 picard_merge_other_params	| | additional parameters for merging with Picard
 picard_dir | | picard directory
 picard_sort_other_params | | additional parameters for sorting with Picard tools
@@ -98,22 +98,22 @@ Parameter | Value | Description
 group-by | | Opionally specify how input files should be separated into workflow runs groups.  For example, if "ROOT_SAMPLE_NAME" was provided as the argument, one workflow run per "ROOT_SAMPLE_NAME" would be scheduled for all input files related to that "ROOT_SAMPLE_NAME".
 output-path | ./ | define output prefix
 output-folder | seqware-results | define output folder
-library-template-type	| | Restrict the processing to samples of a particular template type, e.g. WG, EX, TS
-tissue-type	| | Restrict the processing to samples of particular tissue types, e.g. P, R, X, C. Multiple values can be comma-separated. Tissue types are processed individually (all R's together, all C's together)
-use-tissue-prep	| true | flags if we need to use tissue prep when grouping data
-use-tissue-region	| true | flags if we need to use tissue region when grouping data
-sam-filter-flag	| | bit flag to use for filtering with samtools
-min-map-quality	| | Minimal mapping quality to use for filtering with samtools
+library-template-type | | Restrict the processing to samples of a particular template type, e.g. WG, EX, TS
+tissue-type | | Restrict the processing to samples of particular tissue types, e.g. P, R, X, C. Multiple values can be comma-separated. Tissue types are processed individually (all R's together, all C's together)
+use-tissue-prep | true | flags if we need to use tissue prep when grouping data
+use-tissue-region | true | flags if we need to use tissue region when grouping data
+sam-filter-flag | | bit flag to use for filtering with samtools
+min-map-quality | | Minimal mapping quality to use for filtering with samtools
 do-filter | true | flag to indicate if we want filtering with samtools
 do-mark-duplicates | true | flag to indicate if we want marking of duplicates with Picard tools
 do-remove-duplicates | true |	flag to indicate if we want to remove duplicates with Picard tools
 group-by-aligner | true | flag to indicate if we want to use aligner info for grouping data
-chr-sizes	| | Ids of reference chromosomes, comma-separated
+chr-sizes | | Ids of reference chromosomes, comma-separated
 interval-padding | 100 | Padding for intervals used by GATK's HaplotypeCaller
-stand-emit-conf	| 1 | Standard emit confidence (higher means more confidence)
+stand-emit-conf | 1 | Standard emit confidence (higher means more confidence)
 stand-call-conf | 30 | Standard call confidence (higher means more confidence)
 downsampling | | Downsampling type, one of "NONE", "ALL_READS", "BY_SAMPLE"
 dbsnp | | Path to dbSNP file
 disable-bqsr | false | Disable Base quality calibaration
-verbose	| false | Set logging to verbose (aka debug mode)
+verbose | false | Set logging to verbose (aka debug mode)
 do-split-and-trim | false | flag to indicate if we want to run splitNCigarReads for RNASeq BAM files
