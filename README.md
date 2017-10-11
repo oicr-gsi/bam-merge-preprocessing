@@ -98,7 +98,7 @@ Parameter | Value | Description
 group-by | | Opionally specify how input files should be separated into workflow runs groups.  For example, if "ROOT_SAMPLE_NAME" was provided as the argument, one workflow run per "ROOT_SAMPLE_NAME" would be scheduled for all input files related to that "ROOT_SAMPLE_NAME".
 output-path	| ./ | define output prefix
 output-folder | seqware-results | define output folder
-library-template-type	| | Restrict the processing to samples of a particular template type, e.g. WG, EX, TS	N	 
+library-template-type	| | Restrict the processing to samples of a particular template type, e.g. WG, EX, TS
 tissue-type	| | Restrict the processing to samples of particular tissue types, e.g. P, R, X, C. Multiple values can be comma-separated. Tissue types are processed individually (all R's together, all C's together)
 use-tissue-prep	| true | flags if we need to use tissue prep when grouping data
 use-tissue-region	| true | flags if we need to use tissue region when grouping data
