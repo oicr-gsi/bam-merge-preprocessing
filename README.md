@@ -54,7 +54,7 @@ picard_sort_sam | | path to Picard's SortSam.jar
 picard_merge_sam_mem_mb | 10000 | memory allocated to MergeSam operation
 samtools_filter_other_params | | additional parameters for siltering with samtools
 picard_mark_duplicates_other_params | | additional parameters for MarkDuplicates (Picard tools)
-picard_merge_other_params	| | additional parameters for merging with Picard
+picard_merge_other_params | | additional parameters for merging with Picard
 picard_dir | | picard directory
 picard_sort_other_params | | additional parameters for sorting with Picard tools
 picard_merge_use_threading | | flag that determines if threading should be used when running Picard tools
