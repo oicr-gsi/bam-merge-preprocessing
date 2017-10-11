@@ -47,17 +47,17 @@ would result in 4 parallel jobs and all reads chr9+ being filtered out from the 
 
 Parameter | Value | Description
 ---|---|---
-picard_mark_duplicates	| | path to Picard's Mark Duplicate.jar	Y	set to bundled picard's MarkDuplicates.jar
-picard_mark_duplicates_mem_mb	| 10000 | memory allocated to MarkDuplicate operation in Mb
-picard_merge_sam	| | path to Picard's MergeSam.jar
+picard_mark_duplicates | | path to Picard's Mark Duplicate.jar	Y	set to bundled picard's MarkDuplicates.jar
+picard_mark_duplicates_mem_mb | 10000 | memory allocated to MarkDuplicate operation in Mb
+picard_merge_sam | | path to Picard's MergeSam.jar
 picard_sort_sam | | path to Picard's SortSam.jar
 picard_merge_sam_mem_mb	| 10000 | memory allocated to MergeSam operation
 samtools_filter_other_params | | additional parameters for siltering with samtools
 picard_mark_duplicates_other_params	| | additional parameters for MarkDuplicates (Picard tools)
 picard_merge_other_params	| | additional parameters for merging with Picard
-picard_dir | |	picard directory
-picard_sort_other_params	| | additional parameters for sorting with Picard tools
-picard_merge_use_threading	| | flag that determines if threading should be used whn running Picard tools
+picard_dir | | picard directory
+picard_sort_other_params | | additional parameters for sorting with Picard tools
+picard_merge_use_threading | | flag that determines if threading should be used whn running Picard tools
 
 ### GATK
 
